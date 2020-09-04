@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #202732 "
+    android:visibility="visible"
+    tools:context=".Inicio">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <Button
+            android:id="@+id/b_home"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Titulo"
+            android:textAlignment="center"
+            android:textColor="#FDFFFFFF"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/binvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bienvenido" />
+
+    <Button
+        android:id="@+id/b_sign_in"
+        android:layout_width="129dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:onClick="Login"
+        android:text="@string/Login"
+        android:textColor="#FFFFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/binvenido"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/b_sign_out"
+        android:layout_width="128dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:onClick="Sing_In"
+        android:text="@string/Sing_In"
+        android:textColor="#FFFFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_sign_in"
+        app:layout_constraintVertical_bias="0.225" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1081172448947",
+    "firebase_url": "https://tfg-seguridad.firebaseio.com",
+    "project_id": "tfg-seguridad",
+    "storage_bucket": "tfg-seguridad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081172448947:android:a4cdf73a9c804c605142c6",
+        "android_client_info": {
+          "package_name": "com.example.prueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081172448947-7fa6ffb11tbafo2m8jectk0v35tj19qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB89oyOcoZDfsXrKTvpEZx_woTDMCWXd7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081172448947-7fa6ffb11tbafo2m8jectk0v35tj19qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

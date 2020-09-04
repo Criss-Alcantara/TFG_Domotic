@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #202732 "
+    tools:context=".Escenas_Comedor">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="#FF5722"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/b_home"
+            android:layout_width="1dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Titulo"
+            android:textAlignment="center"
+            android:textColor="#FDFFFFFF"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/b_modificar"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/modificar"
+            android:onClick="Siguiente_Main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/b_escenas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Siguiente_Escena"
+                android:text="@string/BotonEscena"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/seleccion_escenas"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FF5722"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b_cerradura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Siguiente_Cerradura"
+                android:text="@string/BotonCerradura" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/b_alarma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Siguiente_Alarma"
+                android:text="@string/BotonAlarma" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.31">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_comedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/Titulo_Comedor"
+                android:textColor="#FF5722"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_cd_lp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/Luz_Principal"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/b_cd_lp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textOff = " "
+                android:textOn = " "
+                android:background="@drawable/luz_abierta"
+                android:onClick="Cambio_LP_C" />
+
+            <TextView
+                android:id="@+id/tv_cd_p"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/Persiana"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/b_cd_p_a"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/persiana_abierta"
+                    android:onClick="Cambio_P_C_D_A" />
+
+                <Button
+                    android:id="@+id/b_cd_p_c"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/stop"
+                    android:onClick="Cambio_P_C_D_P" />
+
+                <Button
+                    android:id="@+id/b_cd_p_p"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/persiana_baja"
+                    android:onClick="Cambio_P_C_D_C" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_temperatura_cd"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Temperatura"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_grados_cd"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_centigrados_cd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Centigrados"
+                    android:textColor="#F50000"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_humedad_cd"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Humedad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_cantidad_cd"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/tv_porcentaje_cd"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Porcentaje"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

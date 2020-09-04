@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Home Center</string>
+    <!--Escenas-->
+    <string name="BotonEscena">Escenas</string>
+    <string name="BotonCerradura">Cerradura</string>
+    <string name="BotonAlarma">Alarma</string>
+    <string name="Titulo">Home Center</string>
+
+    <!--CERRADURA-->
+    <string name="Cerradura_PP">Puerta Principal</string>
+    <string name="Cerradura_PT">Puerta Terraza</string>
+    <string name="Cerradura_VC">Ventana Comedor</string>
+    <string name="Estado_Abierto">Abierto</string>
+    <string name="Estado_Cerrado">Cerrado</string>
+
+    <!--ALARMAS-->
+    <string name="Alarma_Cerraduras">CERRADURAS</string>
+    <string name="Alarma_Sensores">SENSORES</string>
+    <string name="Estado_Correcto">Correcto</string>
+    <string name="Estado_Peligro">Peligro</string>
+    <string name="Sensor_Fuego">Sensor de Fuego</string>
+    <string name="Sensor_Gas">Sensor de Gas</string>
+    <string name="Sensor_Humo">Sensor de Humo</string>
+    <string name="Sensor_Lluvia">Sensor de Lluvia</string>
+
+    <!--DORMITORIOS-->
+    <string name="Titulo_Dormitorio">DORMITORIOS</string>
+    <string name="Habitacion_Principal">Habitacion Principal</string>
+    <string name="Habitacion_2">2da Habitacion</string>
+    <string name="Habitacion_3">3ra Habitacion</string>
+    <string name="Habitacion_4">4ta Habitacion</string>
+    <string name="Luz_Principal">Luz Principal</string>
+    <string name="Persiana">Persiana</string>
+    <string name="Ventana">Ventana</string>
+    <string name="Temperatura">Temperatura</string>
+    <string name="Grados">0</string>
+    <string name="Centigrados"> ℃</string>
+    <string name="Humedad">Humedad</string>
+    <string name="Porcentaje"> %</string>
+
+
+    <!--COCINA-->
+    <string name="Titulo_Cocina">COCINA</string>
+
+    <!--TERRAZA-->
+    <string name="Titulo_Terraza">TERRAZA</string>
+
+    <!--BAÑOS-->
+    <string name="Titulo_Baño">BAÑOS</string>
+    <string name="Titulo_Baño_Principal">Baño Principal</string>
+    <string name="Titulo_Baño_Secundario">Baño Secundario</string>
+
+    <!--COMEDOR-->
+    <string name="Titulo_Comedor">COMEDOR</string>
+
+    <!--SALON-->
+    <string name="Titulo_Salon">SALON</string>
+    <string name="Titulo_Caldera">CALDERA</string>
+
+    <!--PASILLO-->
+    <string name="Titulo_Pasillo">PASILLO</string>
+    <string name="Luz_Secundaria">Luz Secundaria</string>
+    <string name="Luz_Habitaciones">Luz Habitaciones</string>
+
+    <!--MAIN-->
+    <string name="Titulo_Bienvenido">HOME CENTER</string>
+    <string name="USER">user</string>
+    <string name="PASS">pass</string>
+    <string name="ID">id</string>
+    <string name="MODIFICAR">Modificar</string>
+    <string name="INGRESAR">Ingresar</string>
+    <string name="NUEVO">WiFi</string>
+    <string name="Usuario">Usuario</string>
+
+
+    <!--MODIFICAR DATOS-->
+    <string name="Pass_Antiguo">Pass Antiguo</string>
+    <string name="Pass_Nuevo">New Pass</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Titulo_Modificar">MODIFICAR</string>
+    <string name="Id_Usuario">ID Usuario</string>
+
+    <!--REGISTRO-->
+    <string name="Name_User">Name User</string>
+    <string name="Pass_User">Password User</string>
+    <string name="Code_Access">Code Access</string>
+    <string name="Registro">Registro</string>
+
+    <!--INICIO-->
+    <string name="Login">LOG IN</string>
+    <string name="Sing_In">SIGN IN</string>
+
+</resources>

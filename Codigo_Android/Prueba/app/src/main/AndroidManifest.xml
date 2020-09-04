@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prueba">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/logoandroid"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Registro" />
+        <activity android:name=".Dormitorio_Cuarto" />
+        <activity android:name=".Dormitorio_Tercero" />
+        <activity android:name=".Dormitorio_Secundario" />
+        <activity android:name=".Dormitorio_Principal" />
+        <activity android:name=".Alarmas" />
+        <activity android:name=".Cerraduras" />
+        <activity android:name=".Escenas_Bath" />
+        <activity android:name=".Escenas_Pasillo" />
+        <activity android:name=".Escenas_Salon" />
+        <activity android:name=".Escenas_Comedor" />
+        <activity android:name=".Escenas_Cocina" />
+        <activity android:name=".Escenas_Dormitorio" />
+        <activity android:name=".Escenarios" />
+        <activity android:name=".Modificar_Datos"/>
+        <activity android:name=".Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".ServiceAlerta"
+            android:enabled="true" />
+    </application>
+
+</manifest>
